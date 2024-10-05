@@ -1,0 +1,116 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e1e5eb;
+}
+header {
+    height: 40px;
+    background-color: #507299;
+}
+header img {
+    margin-left: 15%;
+    margin-top: 5px;
+}
+::selection {
+    background-color: #e0e4ea;
+    color: green; 
+}
+.container {
+    display: flex;
+    max-width: 950px;
+    margin: 20px auto;
+}
+.list {
+    float: left;
+    width: 220px;
+}
+.list a {
+    display: flex;
+    text-decoration: none;
+    color: #507299;
+    padding: 10px;
+    margin-right: 18px;
+}
+.list a:hover {
+    background-color: #c3cfe1;
+}
+.posts {
+    max-width: 480px;
+    padding: 0 10px;
+    text-align: justify;
+}
+.simple-post {
+    background-color: #edeef0;
+    border-radius: 10px;
+    padding: 20px 20px 35px 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 5px 2px #d0d0d0;
+}
+.line {
+    height: 4px; 
+    background-color: #d0d0d0; 
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.like {
+    float: left;
+    color: #507299;   
+}
+.comment {
+    float: right;
+    color: #507299;   
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.info {
+    background-color: #edeef0;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px 2px #d0d0d0;
+}
+.info p {
+    background-color: #e2e1e1;
+    margin: 20px 0;
+}
+aside {
+    position: fixed;
+    left: 77%;
+    width: 200px;
+}
+footer {
+    color: #2e5473 ;
+    background-color: #edeef0;
+    text-align: center;
+    padding: 8px;
+}
+
+@media (max-width: 940px) {
+    aside {
+        display: none;
+    }
+    .list {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 720px) {
+    .container {
+        flex-direction: column;
+    }
+    .list{
+        width: 600px;
+        margin-left: calc((100% - 360px) / 4);
+        padding-bottom: 30px;
+    }
+    .list a {
+        float: left;
+    }
+    .posts{
+        margin-left: calc((100% - 450px) / 4);
+        margin-right: calc((100% - 450px) / 4);
+    }
+}
